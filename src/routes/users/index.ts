@@ -1,0 +1,11 @@
+import { Router } from "express";
+import userController from "../../controllers/userController";
+
+// Create a new router instance
+const userRouter = Router();
+
+// Define routes using the router instance
+userRouter.get("/", userController.index);
+
+// Export the router instance
+export default userRouter;
