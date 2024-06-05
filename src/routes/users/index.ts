@@ -6,6 +6,7 @@ const userRouter = Router();
 
 // Define routes using the router instance
 userRouter.get("/", userController.index);
+userRouter.post("/", userController.store);
 
 // Export the router instance
 export default userRouter;
